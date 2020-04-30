@@ -1,111 +1,133 @@
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section section-1">
-    <div class="container">
+    <div class="container" [class.animation]="activePage==0">
       <div class="heading">
+        <p class="intro-line"></p>
         <div class="description">Awake your spirit.</div>
-        <div class="eye-catcher">run!</div>
+        <div class="eye-catcher">Run!</div>
       </div>
-      <div class="image animated slideInRight">
+      <div class="image animated slideInDown">
         <img
           src="/assets/shoes-bg.svg"
-          class="product-bg animated infinite"
+          class="product-bg animated"
           alt="abstract"
         />
         <img
           src="/assets/shoes.png"
           alt="b3"
-          class="product animated infinite"
+          class="product"
         />
       </div>
     </div>
   </div>
   <div class="section section-2">
     <div class="slide">
-      <div class="container">
+      <div class="container" [class.animation]="activePage==1">
         <div class="heading">
+          <p class="intro-line"></p>
           <div class="description">When you’re crazy for chicken.</div>
-          <div class="eye-catcher">eat!</div>
+          <div class="eye-catcher">Eat!</div>
         </div>
-        <div class="image animated slideInRight">
+        <div class="image">
           <img
             src="/assets/biriyani/cuttingBoard.png"
-            class="product-bg animated infinite"
+            class="product-bg animated"
             alt="cuttingBoard"
           />
           <img
             src="/assets/biriyani/b2.png"
             alt="product"
-            class="product animated infinite"
+            class="product"
           />
         </div>
       </div>
     </div>
     <div class="slide">
-      <div class="container">
+      <div class="container" [class.animation]="activePage==1">
         <div class="heading">
+          <p class="intro-line"></p>
           <div class="description">Stop staring & start feasting.</div>
-          <div class="eye-catcher">eat!</div>
+          <div class="eye-catcher">Eat!</div>
         </div>
-        <div class="image animated slideInRight">
+        <div class="image">
           <img
             src="/assets/biriyani/cuttingBoard.png"
-            class="product-bg animated infinite"
+            class="product-bg animated"
             alt="cuttingBoard"
           />
           <img
             src="/assets/biriyani/b1.png"
             alt="b1"
-            class="product animated infinite"
+            class="product"
           />
         </div>
       </div>
     </div>
     <div class="slide">
-      <div class="container">
+      <div class="container" [class.animation]="activePage==1">
         <div class="heading">
+          <p class="intro-line"></p>
           <div class="description">Still craving?</div>
-          <div class="eye-catcher">eat!</div>
+          <div class="eye-catcher">Eat!</div>
         </div>
-        <div class="image animated slideInRight">
+        <div class="image">
           <img
             src="/assets/biriyani/cuttingBoard.png"
-            class="product-bg animated infinite"
+            class="product-bg animated"
             alt="cuttingBoard"
           />
           <img
             src="/assets/biriyani/b3.png"
             alt="b3"
-            class="product animated infinite"
+            class="product"
           />
         </div>
       </div>
     </div>
   </div>
   <div class="section section-3">
-    <div class="container">
+    <div class="container" [class.animation]="activePage==2">
       <div class="heading">
+        <p class="intro-line"></p>
         <div class="description">You need a cold one.</div>
-        <div class="eye-catcher">drink!</div>
+        <div class="eye-catcher">Drink!</div>
       </div>
-      <div class="image animated slideInRight">
+      <div class="image">
         <img
           src="/assets/splash2.png"
-          class="product-bg animated infinite"
+          class="product-bg animated"
           alt="waterSplash"
         />
         <img
           src="/assets/p3.png"
           alt="product"
-          class="product animated infinite"
+          class="product"
         />
       </div>
     </div>
   </div>
   <div class="section section-4">
-    <img
-      src="/assets/sleeping-dog.gif"
-      alt="product"
-      class="product animated infinite"
-    />
+    <div class="container" [class.animation]="activePage==3">
+      <div class="heading">
+        <p class="intro-line"></p>
+        <div class="description">Run, Eat, Drink, Sleep</div>
+        <div class="eye-catcher">Repeat!</div>
+      </div>
+      <div class="image">
+        <img
+          src="/assets/sleep/dream1.png"
+          alt="product-bg"
+          class="product-bg animated"
+        />
+        <img
+          src="/assets/sleep/sleeping-dog.png"
+          alt="product"
+          class="product"
+        />
+      </div>
+    </div>
   </div>
 </div>
+<svg class="arrow-down">
+  <path d="M12 18c-.2 0-.5-.1-.7-.3l-11-10c-.4-.4-.4-1-.1-1.4.4-.4 1-.4 1.4-.1l10.4 9.4 10.3-9.4c.4-.4 1-.3 1.4.1.4.4.3 1-.1 1.4l-11 10c-.1.2-.4.3-.6.3z"></path>
+</svg>

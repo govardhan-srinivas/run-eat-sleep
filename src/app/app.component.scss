@@ -10,36 +10,31 @@
     opacity: 1;
   }
 }
-@keyframes revealTextFromLeft {
-  0% {
-    transform: translate3d(calc(-100% - 251px), 0, 0);
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
 .container {
   overflow: hidden;
+  width: 100%;
+  opacity: 0;
 
   .heading {
     margin: 0 auto;
     display: inline-block;
     width: auto;
-    padding: 0 0 0 10%;
+    max-width: 40%;
+    padding-left: 10%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    animation-name: revealTextFromRight;
-    // opacity: 0;
-    animation-duration: 1550ms;
-    animation-fill-mode: forwards;
+    z-index: 1;
+    .intro-line {
+      width: 125px;
+      border-bottom: 4px solid #000;
+      margin-bottom: 20px;
+    }
     .description {
-      font-size: 38px;
+      font-size: 1.5em;
     }
     .eye-catcher {
-      font-size: 128px;
+      font-size: 8em;
     }
   }
 }
@@ -59,18 +54,11 @@
   background-color: #ff2e8c;
 
   .image {
-    .product {
-      animation-name: bounce, pulse;
-      animation-duration: 1s, 10s;
-      animation-delay: 1s, 2s;
-    }
+    width: auto;
+    max-width: 50%;
     .product-bg {
       position: absolute;
-      animation-name: pulse;
-      animation-duration: 10s;
-      animation-delay: 1s;
     }
-    width: 600px;
     float: right;
     padding-right: 10%;
     position: absolute;
@@ -81,22 +69,43 @@
 // Override the global css
 .section-2 {
   background: linear-gradient(to bottom, #85a2d8 0%, #d9d27b 100%);
-  .image {
-    img[alt="cuttingBoard"] {
-      width: 600px;
-    }
-    img[alt="b1"] {
-      width: 600px;
-      height: 460px;
-    }
-  }
-  .fp-slidesNav {
-    text-align: center;
-  }
 }
 .section-3 {
   background: radial-gradient(circle, #fcd3bb, #f8b500);
+}
+.arrow-down {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+  animation: bounce 5s infinite;
+  transition: opacity 1.3s ease;
+  opacity: 1;
+}
+.animation {
+  &.container {
+    opacity: 1;
+  }
+  .heading {
+    animation-name: revealTextFromRight;
+    animation-duration: 1550ms;
+    animation-fill-mode: forwards;
+  }
   .image {
-    top: 0;
+    .product {
+      animation-name: bounceInDown;
+      animation-duration: 1s;
+      // animation-name: bounce, swing;
+      // animation-duration: 1s, 20s;
+      // animation-delay: 1s, 2s;
+    }
+    .product-bg {
+      animation-name: bounceInRight;
+      animation-duration: 1s;
+    }
   }
 }

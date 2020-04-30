@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "parallax": {
+    "run-eat-sleep": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/parallax",
+            "outputPath": "dist/run-eat-sleep",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "parallax:build"
+            "browserTarget": "run-eat-sleep:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "parallax:build:production"
+              "browserTarget": "run-eat-sleep:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "parallax:build"
+            "browserTarget": "run-eat-sleep:build"
           }
         },
         "test": {
@@ -106,15 +106,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "parallax:serve"
+            "devServerTarget": "run-eat-sleep:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "parallax:serve:production"
+              "devServerTarget": "run-eat-sleep:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "parallax"
+  "defaultProject": "run-eat-sleep"
 }

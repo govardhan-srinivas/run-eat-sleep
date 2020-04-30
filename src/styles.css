@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   transform-style: preserve-3d;
+  transition: all 700ms ease 0s; 
 }
 img {
   width: 100%;
