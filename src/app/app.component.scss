@@ -97,11 +97,12 @@
   }
   .image {
     .product {
-      animation-name: bounceInDown;
-      animation-duration: 1s;
+      animation-name: bounceInDown, swing;
+      animation-duration: 1s, 20s;
+      animation-iteration-count: 1, infinite;
       // animation-name: bounce, swing;
       // animation-duration: 1s, 20s;
-      // animation-delay: 1s, 2s;
+      animation-delay: 0s, 1s;
     }
     .product-bg {
       animation-name: bounceInRight;
