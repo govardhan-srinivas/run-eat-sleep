@@ -22,7 +22,7 @@
     "@fullpage/angular-fullpage": "0.0.14",
     "animate.css": "^3.7.2",
     "rxjs": "~6.4.0",
-    "tslib": "^1.9.0",
+    "tslib": "^2.1.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
